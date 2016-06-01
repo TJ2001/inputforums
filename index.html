@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type=text/css>
+  <title>Purchase Order</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Fill out the Survey below:</h1>
+    <!-- name -->
+    <h2>Name</h2>
+    <form id="info">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Jane/John Doe">
+      </div>
+
+      <!-- birthday -->
+      <div class="form-group">
+        <label for="born"><h3>Date of birth:</h3></label>
+        <input id="born" class="form-control" type="date">
+      </div>
+      <!-- favorite food -->
+      <h3>Favorite Food</h3>
+      <select class="form-control" id="food">
+        <option value="italian">Italian</option>
+        <option value="mexican">Mexican</option>
+        <option value="chinese">Chinese</option>
+        <option value="korean">Korean</option>
+        <option value="french">French</option>
+        <option value="american">Modern American</option>
+      </select>
+
+      <!-- favorite music -->
+      <h3>Favorite Music</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="rap" checked>
+          Rap
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="rock">
+          Rock
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="country">
+          Country
+        </label>
+      </div>
+
+      <!-- favorite color -->
+      <div class="form-group">
+        <label for="color"><h3>What is your favorite color?</h3></label>
+        <input id="color" class="form-control" type="color">
+      </div>
+      <!-- ID Card -->
+      <button class="btn btn-default"type="submit" name="button">Submit</button>
+    </form>
+      <!-- output -->
+    <div class="output">
+      <h2 id="nameout"></h2>
+      <h3 id="bornout"></h3>
+      <h3 id="foodout"></h3>
+      <h3 id="musicout"></h3>
+      <h3 id="colorout"></h3>
+    </div>
+
+  </div>
+
+
+
+  <!-- scripts -->
+  <script src="js/jquery-1.12.4.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
